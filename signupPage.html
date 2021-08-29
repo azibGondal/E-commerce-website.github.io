@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign UP </title>
+    <style>
+        #logo {
+            text-align: center;
+            margin-top: 20px;
+        }
+        #cover{
+           
+            width: 310px;
+            margin-left: 20px;
+        }
+        #container{
+            display: flex;
+            
+            
+            justify-content: center;
+            align-items:center;
+        }
+
+        #wrapper{
+            border: 1px solid gray;
+            border-radius: 6px;
+            background-color: #fff;            
+            /* width: 370px; */
+            
+        }
+        .form-heading{
+            font-weight: 600;
+        }
+        .form{
+            width: 90%;
+            height: 25px;
+        }
+        #btn{
+            padding: 9px 42px;
+    margin: 20px 0px;
+    background-color: #f2c964 ;
+        }
+        #para{
+            font-size: 15px;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <div id="logo">
+            <img src="./img/logo1.png" alt="">
+        </div>
+        <div id="container">
+            <div id="wrapper">
+                <div id="cover">
+                    <h2>Create account</h2>
+                    <form action="">
+                        <div id="form1">
+                        <label for="" class="form-heading">Your name</label> <br>
+                        <input type="text" class="form" required>
+                    </div>
+                            <br>
+
+                    <div id="form1">
+                        <label for="" class="form-heading">Email</label>  <br>
+                        <input type="email " class="form" required>
+                    </div>
+                    <br>
+                    <div id="form1">
+                        <label for="" class="form-heading">Password</label>  <br>
+                        <input type="password" class="form" placeholder="At least 6 characters" required>
+                    </div>
+                    <br>
+
+                    <div id="form1">
+                        <label for=""  class="form-heading">Re-enter password</label>  <br>
+                        <input type="password" class="form" required>
+                    </div>
+
+                    </form>
+                    <button id="btn">Create your own Rymo account</button>
+                    <div>
+                        <p id="para">By creating an account, you agree to Rymo <br> Conditions of Use and Privacy Notice.</p>
+                    </div>
+
+                    <hr>
+
+                    <div>
+                        <p>Already have an account? <span><a href="signinpage.html">Sign-In</a></span>   <br>
+                            Buying for work? Create a free business account</p>
+                    </div>
+
+
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        let btn = document.getElementById("btn");
+        btn.addEventListener("click",function(){
+            alert("wait!! we are checking your information ");
+
+        })
+
+        
+    </script>
+</body>
+
+
+</html>
